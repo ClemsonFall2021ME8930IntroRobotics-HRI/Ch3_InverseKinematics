@@ -24,7 +24,7 @@ From this, we can see that once we find out the joint values for joint 1 and joi
 
 To find ϴ1 and ϴ2, we need first to find the position of the wrist point. Using simple trigonometry, we can see that:
 
-![formula](https://render.githubusercontent.com/render/math?math = x_3=x_e-a_3\cos{\gamma})
+![formula](https://render.githubusercontent.com/render/math?math = x_3 = x_e - a_3 \cos{\gamma})
 
 ![formula](https://render.githubusercontent.com/render/math?math = y_3=y_e-a_3\sin{\gamma})
 
