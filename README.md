@@ -26,27 +26,27 @@ From this, we can see that once we find out the joint values for joint 1 and joi
 
 To find ϴ1 and ϴ2, we need first to find the position of the wrist point. Using simple trigonometry, we can see that:
 
-![x3](1.png)
+![x3](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/1.jpg)
 
 To find ϴ2, we need to first find β. Using the law of cosine in the triangle made by joints 1, 2, and 3, we get:
 
-![y3](2.png)
+![beta](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/2.jpg)
 
-![beta](3.png)
+![theta2](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/3.jpg)
 
 To find ϴ1, we need to first find α and δ. We can find α with the help of the wrist point.
 
-![theta2](4.png)
+![alpha](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/4.jpg)
 
 For δ, we can again use the law of cosines:
 
-![alpha](5.png)
+![delta](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/5.jpg)
 
-![delta](6.png)
+![theta1](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/6.jpg)
 
 Using equations (1), (2), and (3), we can find ϴ3:
 
-![theta1](7.png)
+![theta3](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/7.jpg)
 
 This solution only provides one configuration, i.e., the elbow-down configuration. You can use a similar geometric approach to find joint angles for the elbow-up configuration. The solution for the elbow-up configuration can be found in the python code. 
 
@@ -56,7 +56,7 @@ This solution only provides one configuration, i.e., the elbow-down configuratio
 
 Open the “scene_setup.ttt” file. For our problem, we make our manipulator by using the “Add > Primitive Shape > Cuboid” for the linkages and “Add > Joint > Revolute”.
 
-![cop](8.png)
+![cop](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch3_InverseKinematics/blob/main/Images/8.jpg)
  		 
 To find inverse kinematics, we need to fix certain variables. For our example let’s set the link lengths as:
 
