@@ -5,9 +5,10 @@
 Finding the inverse kinematic solution of a 3-link planar manipulator. Use the found solution to write a python code and simulate in Coppeliasim.
 
 ## Pre-requisites:
-	Software: Coppeliasim (for simulation), Spyder (for python coding)
-	Basic python syntax
-	Understanding of the python remote API commands for coppeliasim ( refer: [Remote API Python](https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm))
+
+- Software: Coppeliasim (for simulation), Spyder (for python coding)
+- Basic python syntax
+- Understanding of the python remote API commands for coppeliasim ( refer: [Remote API Python](https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm))
 
 ## Solution:
 
