@@ -79,7 +79,7 @@ Base – Revolute joint 1 – Link 1 – Revolute joint 2 – Link 2 – Revolut
 
 Once the hierarchy is set, the only thing remaining now is opening a connection for coppeliasim and spyder to communicate through. We can do so by copying the following command in any of the child scripts:
 
-'simRemoteApi.start(19999)'
+`simRemoteApi.start(19999)`
 
 To open a child script, right-click on any of the joints or links then “Add > Associated child script > Nonthreaded”. This will add a script-like logo next to the selected link or joint, double click that logo, and paste the above code line as the first line of the code without changing anything else. Now we begin to write the code for simulation.
 
