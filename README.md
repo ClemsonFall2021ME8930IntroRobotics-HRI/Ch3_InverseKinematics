@@ -1,4 +1,5 @@
 # Ch3_InverseKinematics
+
 ##Problem Statement:
 
 Finding the inverse kinematic solution of a 3-link planar manipulator. Use the found solution to write a python code and simulate in Coppeliasim.
@@ -23,29 +24,29 @@ From this, we can see that once we find out the joint values for joint 1 and joi
 
 To find ϴ1 and ϴ2, we need first to find the position of the wrist point. Using simple trigonometry, we can see that:
 
-x_3=x_e-a_3\cos{\gamma}
+![formula](https://render.githubusercontent.com/render/math?math = x_3=x_e-a_3\cos{\gamma})
 
-y_3=y_e-a_3\sin{\gamma}
+![formula](https://render.githubusercontent.com/render/math?math = y_3=y_e-a_3\sin{\gamma})
 
 To find ϴ2, we need to first find β. Using the law of cosine in the triangle made by joints 1, 2, and 3, we get:
 
-\beta={cos}^{-1}{\left(\frac{a_1^2+a_2^2-x_3^2-y_3^2}{2a_1a_2}\right)}
+![formula](https://render.githubusercontent.com/render/math?math = \beta={cos}^{-1}{\left(\frac{a_1^2+a_2^2-x_3^2-y_3^2}{2a_1a_2}\right)})
 
-{\therefore\theta}_2=\pi-\beta\ =\ \pi-{cos}^{-1}{\left(\frac{a_1^2+a_2^2-x_3^2-y_3^2}{2a_1a_2}\right)} ... (2)
+![formula](https://render.githubusercontent.com/render/math?math ={\therefore\theta}_2=\pi-\beta\ =\ \pi-{cos}^{-1}{\left(\frac{a_1^2+a_2^2-x_3^2-y_3^2}{2a_1a_2}\right)}) ... (2)
 
 To find ϴ1, we need to first find α and δ. We can find α with the help of the wrist point.
 
-\alpha={tan}^{-1}{\left(\frac{y_3}{x_3}\right)}
+![formula](https://render.githubusercontent.com/render/math?math = \alpha={tan}^{-1}{\left(\frac{y_3}{x_3}\right)})
 
 For δ, we can again use the law of cosines:
 
-\delta={cos}^{-1}{\left(\frac{x_3^2+y_3^2+a_1^2-a_2^2}{2a_1\sqrt{x_3^2+y_3^2}}\right)}
+![formula](https://render.githubusercontent.com/render/math?math = \delta={cos}^{-1}{\left(\frac{x_3^2+y_3^2+a_1^2-a_2^2}{2a_1\sqrt{x_3^2+y_3^2}}\right)})
 
-\therefore\theta_1=\alpha-\delta\ ={tan}^{-1}{\left(\frac{y_3}{x_3}\right)}\ -{cos}^{-1}{\left(\frac{x_3^2+y_3^2+a_1^2-a_2^2}{2a_1\sqrt{x_3^2+y_3^2}}\right)} ... (3)
+![formula](https://render.githubusercontent.com/render/math?math = \therefore\theta_1=\alpha-\delta\ ={tan}^{-1}{\left(\frac{y_3}{x_3}\right)}\ -{cos}^{-1}{\left(\frac{x_3^2+y_3^2+a_1^2-a_2^2}{2a_1\sqrt{x_3^2+y_3^2}}\right)}) ... (3)
 
 Using equations (1), (2), and (3), we can find ϴ3:
 
-\therefore\theta_3=\gamma-\theta_1-\theta_2
+![formula](https://render.githubusercontent.com/render/math?math = \therefore\theta_3=\gamma-\theta_1-\theta_2)
 
 This solution only provides one configuration, i.e., the elbow-down configuration. You can use a similar geometric approach to find joint angles for the elbow-up configuration. The solution for the elbow-up configuration can be found in the python code. 
 
