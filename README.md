@@ -8,7 +8,7 @@ Finding the inverse kinematic solution of a 3-link planar manipulator. Use the f
 
 - Software: Coppeliasim (for simulation), Spyder (for python coding)
 - Basic python syntax
-- Understanding of the python remote API commands for coppeliasim ( refer: [Remote API Python](https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm))
+- Understanding of the python remote API commands for coppeliasim (refer: [Remote API Python](https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm))
 
 ## Solution:
 
