@@ -12,7 +12,8 @@ Finding the inverse kinematic solution of a 3-link planar manipulator. Use the f
 
 ## Solution:
 
-![3 link planar manipulator](./Images/diagram.png)
+![3 link planar manipulator](diagram.png)
+![3 link planar manipulator](./Images/ diagram.png)
  
 Assume the link lengths to be a1, a2, and a3, respectively, with corresponding joint angles of ϴ1, ϴ2, and ϴ3.
 
