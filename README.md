@@ -1,15 +1,15 @@
 # Ch3_InverseKinematics
 
-##Problem Statement:
+## Problem Statement:
 
 Finding the inverse kinematic solution of a 3-link planar manipulator. Use the found solution to write a python code and simulate in Coppeliasim.
 
-##Pre-requisites:
+## Pre-requisites:
 	Software: Coppeliasim (for simulation), Spyder (for python coding)
 	Basic python syntax
 	Understanding of the python remote API commands for coppeliasim ( refer: [Remote API Python](https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm))
 
-##Solution:
+## Solution:
 
  
 Assume the link lengths to be a1, a2, and a3, respectively, with corresponding joint angles of ϴ1, ϴ2, and ϴ3.
@@ -50,9 +50,9 @@ Using equations (1), (2), and (3), we can find ϴ3:
 
 This solution only provides one configuration, i.e., the elbow-down configuration. You can use a similar geometric approach to find joint angles for the elbow-up configuration. The solution for the elbow-up configuration can be found in the python code. 
 
-##Simulation:
+## Simulation:
 
-###Scene setup:
+### Scene setup:
 
 Open the “scene_setup.ttt” file. For our problem, we make our manipulator by using the “Add > Primitive Shape > Cuboid” for the linkages and “Add > Joint > Revolute”. 
  		 
@@ -82,7 +82,7 @@ Once the hierarchy is set, the only thing remaining now is opening a connection 
 
 To open a child script, right-click on any of the joints or links then “Add > Associated child script > Nonthreaded”. This will add a script-like logo next to the selected link or joint, double click that logo, and paste the above code line as the first line of the code without changing anything else. Now we begin to write the code for simulation.
 
-###Coding:
+### Coding:
 
 The code is essentially divided into five parts. Read through the following steps and explanations:
 
