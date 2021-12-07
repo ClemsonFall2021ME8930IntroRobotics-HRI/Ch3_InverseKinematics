@@ -99,6 +99,6 @@ The code is essentially divided into five parts. Read through the following step
 
 - The firth part of the code (lines 75 – 81) utilizes our inverse kinematic solution. Note that the change in coordinate system follows in this part of the code too
 
-- Once we find the joint angles necessary for the manipulator to reach the desired position and with the defined orientation, we need to communicate these values back to coppeliasim to move the joints accordingly. In the fifth part of the code, we send these values using the remote API command ('simxSetJointPosition()')
+- Once we find the joint angles necessary for the manipulator to reach the desired position and with the defined orientation, we need to communicate these values back to coppeliasim to move the joints accordingly. In the fifth part of the code, we send these values using the remote API command (`simxSetJointPosition()`)
 
 - If we directly send these values to coppeliasim, the joint will instantly move to its calculated value. But, since we want to see how the manipulator moves, we will use a for loop and only return 1% of the joint value to coppeliasim in every iteration. This will give a smooth simulation.
