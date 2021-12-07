@@ -12,7 +12,7 @@ Finding the inverse kinematic solution of a 3-link planar manipulator. Use the f
 
 ## Solution:
 
-![3 link planar manipulator](cuboid.png)
+![3 link planar manipulator](./Images/cuboid.png)
  
 Assume the link lengths to be a1, a2, and a3, respectively, with corresponding joint angles of ϴ1, ϴ2, and ϴ3.
 
@@ -26,27 +26,27 @@ From this, we can see that once we find out the joint values for joint 1 and joi
 
 To find ϴ1 and ϴ2, we need first to find the position of the wrist point. Using simple trigonometry, we can see that:
 
-![x3](1.png)
+![x3](./Images/1.png)
 
 To find ϴ2, we need to first find β. Using the law of cosine in the triangle made by joints 1, 2, and 3, we get:
 
-![y3](2.png)
+![y3](./Images/2.png)
 
-![beta](3.png)
+![beta](./Images/3.png)
 
 To find ϴ1, we need to first find α and δ. We can find α with the help of the wrist point.
 
-![theta2](4.png)
+![theta2](./Images/4.png)
 
 For δ, we can again use the law of cosines:
 
-![alpha](5.png)
+![alpha](./Images/5.png)
 
-![delta](6.png)
+![delta](./Images/6.png)
 
 Using equations (1), (2), and (3), we can find ϴ3:
 
-![theta1](7.png)
+![theta1](./Images/7.png)
 
 This solution only provides one configuration, i.e., the elbow-down configuration. You can use a similar geometric approach to find joint angles for the elbow-up configuration. The solution for the elbow-up configuration can be found in the python code. 
 
@@ -56,7 +56,7 @@ This solution only provides one configuration, i.e., the elbow-down configuratio
 
 Open the “scene_setup.ttt” file. For our problem, we make our manipulator by using the “Add > Primitive Shape > Cuboid” for the linkages and “Add > Joint > Revolute”.
 
-![cop](8.png)
+![cop](./Images/8.png)
  		 
 To find inverse kinematics, we need to fix certain variables. For our example let’s set the link lengths as:
 
